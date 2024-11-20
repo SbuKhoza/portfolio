@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #0d0d0d;
+    position: absolute;
+    
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1.5em;
+    background-color: #020202;
+}
+
+.links {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: rgb(49, 48, 61);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    height: auto;
+    background-color: aqua;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 45px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact:hover {
+    background-color: aqua;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 1em;
+    }
+
+    .logo, .contact {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}
