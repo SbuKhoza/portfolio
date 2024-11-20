@@ -44,9 +44,9 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    width: 15%;
+    width: 6%;
     height: auto;
-    background-color: aqua;
+    
 }
 
 .logo img {

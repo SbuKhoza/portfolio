@@ -1,8 +1,61 @@
 
 
 .container {
+    display: flex;
     width: 90%;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #020202;
-    height: 100vh;
+    /* height: 100vh; */
+}
+
+.typography {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    
+}
+
+
+ #greating {
+    font-size: 2rem;
+}
+
+#myname {
+    font-size: 5rem;
+
+}
+
+#j-title {
+    width: 56%;
+    /* background-color: #654027; */
+    font-size: 3rem;
+    text-align: center;
+}
+
+#greating {
+    color: whitesmoke;
+}
+
+
+.picture {
+    width: 50%;
+
+
+}
+
+.profileimage {
+    width: 100%;
+    
+    
+
+}
+
+.picture img {
+    width: 100%;
+    object-fit: cover;
+    
+    
 }
