@@ -1,7 +1,7 @@
 // Body.js
 import React from 'react';
 import './Body.css';
-import profileImage from '../../public/Sibusiso.png'; // You'll need to add your image
+import profileImage from '../assets/Sibusiso.png'; // You'll need to add your image
 
 function Bodysection() {
   return (
