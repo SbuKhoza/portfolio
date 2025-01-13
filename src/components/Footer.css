@@ -1,0 +1,243 @@
+/* Base styles */
+.footer {
+    background-color: #111827;
+    color: white;
+    padding: 2rem 1rem; /* Smaller padding on mobile */
+    width: 100%;
+  }
+  
+  .footer-container {
+    width: 100%;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .footer-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr; /* Single column by default */
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.25rem; /* Smaller on mobile */
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .label {
+    font-weight: 600;
+  }
+  
+  .link {
+    color: #60A5FA;
+    transition: color 0.3s;
+    word-break: break-word; /* Prevent email overflow */
+  }
+  
+  .link:hover {
+    color: #93C5FD;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap; /* Allow wrapping on very small screens */
+  }
+  
+  .social-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.25rem;
+  }
+  
+  /* Form styles */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #1F2937;
+    border: 1px solid #374151;
+    outline: none;
+    font-size: 0.875rem;
+  }
+  
+  .form-input:focus {
+    border-color: #3B82F6;
+  }
+  
+  textarea.form-input {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .submit-button {
+    background-color: #2563EB;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s;
+    font-size: 0.875rem;
+    width: 100%; /* Full width on mobile */
+  }
+  
+  .submit-button:hover {
+    background-color: #1D4ED8;
+  }
+  
+  .footer-copyright {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #1F2937;
+    text-align: center;
+    color: #9CA3AF;
+    font-size: 0.875rem;
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .footer {
+      padding: 2.5rem 1.5rem;
+    }
+  
+    .submit-button {
+      width: auto; /* Reset button width */
+      padding: 0.5rem 1.5rem;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .footer {
+      padding: 3rem 2rem;
+    }
+  
+    .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+  
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .form-input {
+      padding: 0.625rem 1rem;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .footer {
+      padding: 4rem 2rem;
+    }
+  
+    .footer-grid {
+      gap: 4rem;
+    }
+  
+    .footer-container {
+      padding: 0 2rem;
+    }
+  
+    .contact-info {
+      gap: 1rem;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .footer {
+      padding: 5rem 2rem;
+    }
+  
+    .footer-grid {
+      gap: 6rem;
+    }
+  }
+  
+  /* Hover states - only apply on devices that support hover */
+  @media (hover: hover) {
+    .submit-button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .link:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .form-input {
+      background-color: #1F2937;
+      border-color: #374151;
+    }
+  
+    .form-input:focus {
+      border-color: #3B82F6;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+    }
+  }
+  
+  /* Reduce motion if user prefers */
+  @media (prefers-reduced-motion: reduce) {
+    .submit-button, .link {
+      transition: none;
+    }
+  }
+  
+  /* Print styles */
+  @media print {
+    .footer {
+      background-color: white;
+      color: black;
+      padding: 1rem;
+    }
+  
+    .submit-button {
+      display: none;
+    }
+  
+    .footer-copyright {
+      border-top-color: #ddd;
+    }
+  }

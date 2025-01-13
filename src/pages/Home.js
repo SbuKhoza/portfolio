@@ -1,7 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+// import Navbar from '../components/Navbar'
 import Bodysection from '../components/Bodysection'
 import './Home.css';
+import Footer from '../components/Footer';
 
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
     <div className='maincontainer'>
         
         <Bodysection/>
+        <Footer/>
 
     </div>
   )

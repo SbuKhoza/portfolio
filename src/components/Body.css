@@ -7,7 +7,7 @@
     min-height: 100vh;
     margin: 0 auto;
     padding: 2rem;
-    align-items: flex-start; /* Changed from default to align items at the top */
+    align-items: flex-start;
 }
 
 .typography {
@@ -41,9 +41,9 @@
 .picture {
     width: 50%;
     display: flex;
-    align-items: flex-start; /* Changed from center to align at the top */
+    align-items: flex-start;
     justify-content: center;
-    padding-top: 0.5rem; /* Added padding to fine-tune the position */
+    padding-top: 0.5rem;
 }
 
 .profileimage {
@@ -52,7 +52,6 @@
     object-fit: cover;
 }
 
-/* Rest of the CSS remains the same */
 .skills-section {
     width: 100%;
     margin: 8rem 0 2rem;
@@ -118,26 +117,103 @@
     font-size: 0.875rem;
 }
 
+/* Improved Media Queries */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
         width: 100%;
+        padding: 1rem;
+        margin-top: 4rem; /* Add space for fixed navbar */
     }
 
-    .typography, .picture {
+    .typography {
         width: 100%;
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .picture {
+        display: none;
+        width: 100%;
+        margin-bottom: 2rem;
     }
 
     #myname {
         font-size: 3rem;
+        margin: 0.5rem 0;
     }
 
     #j-title {
         font-size: 2rem;
         width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #greeting {
+        font-size: 1.5rem;
+    }
+
+    .profileimage {
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .skills-section {
+        margin: 4rem 0 2rem;
     }
 
     .skills-grid {
         grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .projects-section {
+        margin: 2rem 0;
+        padding: 0 0.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .project-card {
+        margin: 0;
+        padding: 1.25rem;
+    }
+
+    .tech-stack {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .tech-stack span {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.5rem;
+    }
+}
+
+/* Additional breakpoint for very small screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 0.5rem;
+    }
+
+    .typography {
+        padding: 0.5rem;
+    }
+
+    #myname {
+        font-size: 2.5rem;
+    }
+
+    #j-title {
+        font-size: 1.75rem;
+    }
+
+    .project-card {
+        padding: 1rem;
     }
 }

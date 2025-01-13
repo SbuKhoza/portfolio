@@ -10,7 +10,6 @@
     justify-content: center;
     background-color: #0d0d0d;
     position: absolute;
-    
 }
 
 nav {
@@ -28,6 +27,7 @@ nav {
     display: flex;
     gap: 2em;
     align-items: center;
+    list-style: none;
 }
 
 .links a {
@@ -46,7 +46,6 @@ nav {
     align-items: center;
     width: 6%;
     height: auto;
-    
 }
 
 .logo img {
@@ -73,21 +72,48 @@ nav {
     background-color: aqua;
 }
 
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
-        align-items: center;
+        padding: 1em 2em;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 2em;
+        top: 1.5em;
     }
 
     .links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #0d0d0d;
+        padding: 1em 0;
+        text-align: center;
         flex-direction: column;
         gap: 1em;
-        margin-top: 1em;
     }
 
-    .logo, .contact {
-        width: 100%;
-        margin-bottom: 1em;
+    .links.active {
+        display: flex;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    .contact {
+        display: none;
     }
 }
