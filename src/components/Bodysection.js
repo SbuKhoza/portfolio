@@ -24,7 +24,9 @@ function Bodysection() {
               { skill: 'CSS', level: 'Advanced' },
               { skill: 'JavaScript', level: 'Intermediate' },
               { skill: 'React Native', level: 'Intermediate' },
-              { skill: 'TypeScript', level: 'Beginner' }
+              { skill: 'TypeScript', level: 'Beginner' },
+              { skill: 'UX/UI Designer', level: 'Advance' },
+              { skill: 'Wordpress', level: 'Advance' }
             ].map((item, index) => (
               <div key={index} className="skill-item">
                 <span className="skill-name">{item.skill}</span>
