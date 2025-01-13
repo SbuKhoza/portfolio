@@ -91,8 +91,6 @@ function Bodysection() {
         
       </div>
 
-     
-
       <div className="content-row">
         <div className="skills-section">
           <h3>Skills Matrix</h3>
@@ -120,14 +118,30 @@ function Bodysection() {
         <div className="projects-section">
           <h3>Projects</h3>
           <div className="projects-grid">
-            {[1, 2, 3].map((project) => (
-              <div key={project} className="project-card">
-                <h4>Project {project}</h4>
-                <p>Description of the project goes here</p>
+            {[
+              {
+                title: 'Todo List',
+                description: 'Prototype of a todo list mobile application',
+                techStack: ['Figma']
+              },
+              {
+                title: 'Recipe App',
+                description: 'React recipe app uses APIs to fetch recipes',
+                techStack: ['React', 'Restful APIs']
+              },
+              {
+                title: 'Employee Management System',
+                description: 'A comprehensive web application for managing employee data, tracking attendance, and handling HR processes efficiently',
+                techStack: ['React']
+              }
+            ].map((project) => (
+              <div key={project.title} className="project-card">
+                <h4>{project.title}</h4>
+                <p>{project.description}</p>
                 <div className="tech-stack">
-                  <span>React</span>
-                  <span>Node.js</span>
-                  <span>MongoDB</span>
+                  {project.techStack.map((tech, index) => (
+                    <span key={index}>{tech}</span>
+                  ))}
                 </div>
               </div>
             ))}
