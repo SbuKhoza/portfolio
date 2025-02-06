@@ -1,5 +1,5 @@
 import React from 'react';
-import '../components/Body.css';
+import '../components';
 import profileImage from '../assets/Sibusiso.png'; // You'll need to replace this with your own image
 import resumePDF from '../assets/SibusisoKhozaResume.pdf'; // Replace with your own resume
 

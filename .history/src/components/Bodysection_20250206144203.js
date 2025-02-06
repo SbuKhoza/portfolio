@@ -164,12 +164,11 @@ function Bodysection() {
               </div>
             ))}
           </div>
-          <br></br>
 
           <div className="facilitator-feedback">
             <h3>Facilitator's Feedback</h3>
             <p>
-              <br></br>
+              <br
               S'bu consistently demonstrates exceptional potential as a developer and designer. 
               His projects showcase not just technical skills, but a deep understanding of user 
               experience and innovative problem-solving. The Recipe App and Hotel App particularly 

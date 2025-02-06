@@ -22,7 +22,7 @@ function Navbar() {
 
         <ul className={`links ${isMenuOpen ? 'active' : ''}`}>
           <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
-          {/* <li><Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link></li> */}
+          <li><Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link></li>
           <li><Link to="/portfolio" onClick={() => setIsMenuOpen(false)}>Portfolio</Link></li>
         </ul>
 

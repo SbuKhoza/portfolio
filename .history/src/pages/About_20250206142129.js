@@ -1,9 +1,9 @@
 import React from 'react';
-import '../components/Body.css';
-import profileImage from '../assets/Sibusiso.png'; // You'll need to replace this with your own image
-import resumePDF from '../assets/SibusisoKhozaResume.pdf'; // Replace with your own resume
+import './Body.css';
+import profileImage from '../assets/profile.png'; // You'll need to replace this with your own image
+import resumePDF from '../assets/resume.pdf'; // Replace with your own resume
 
-function About() {
+function AboutMe() {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
     link.href = resumePDF;
@@ -130,4 +130,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutMe;

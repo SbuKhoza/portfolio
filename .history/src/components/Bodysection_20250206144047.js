@@ -159,26 +159,10 @@ function Bodysection() {
                   ))}
                 </div>
 
-                
 
+                
               </div>
             ))}
-          </div>
-          <br></br>
-
-          <div className="facilitator-feedback">
-            <h3>Facilitator's Feedback</h3>
-            <p>
-              <br></br>
-              S'bu consistently demonstrates exceptional potential as a developer and designer. 
-              His projects showcase not just technical skills, but a deep understanding of user 
-              experience and innovative problem-solving. The Recipe App and Hotel App particularly 
-              highlight his ability to create functional, user-friendly interfaces that solve real-world 
-              challenges. His commitment to learning, attention to detail, and creative approach 
-              set him apart as a promising talent in web and mobile development. Keep pushing 
-              boundaries, continue learning, and stay curious – your growth trajectory is incredibly 
-              impressive!
-            </p>
           </div>
         </div>
       </div>

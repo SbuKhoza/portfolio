@@ -1,7 +1,7 @@
 import React from 'react';
-import '../components/Body.css';
-import profileImage from '../assets/Sibusiso.png'; // You'll need to replace this with your own image
-import resumePDF from '../assets/SibusisoKhozaResume.pdf'; // Replace with your own resume
+import './Body.css';
+import profileImage from '../assets/profile.png'; // You'll need to replace this with your own image
+import resumePDF from '../assets/sIBUSISOkHOZA'; // Replace with your own resume
 
 function About() {
   const handleDownloadResume = () => {

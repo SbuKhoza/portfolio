@@ -127,58 +127,24 @@ function Bodysection() {
               {
                 title: 'Recipe App',
                 description: 'React recipe app uses APIs to fetch recipes',
-                techStack: ['React', 'Restful APIs'],
-                link: 'https://recipe-eta-one.vercel.app/'
+                techStack: ['React', 'Restful APIs']
               },
               {
-                title: 'Hotel App',
-                description: 'A comprehensive web application for Booking accommodations',
-                techStack: ['React'],
-                link: 'https://hotelappv4.vercel.app/'
+                title: 'Employee Management System',
+                description: 'A comprehensive web application for managing employee data, tracking attendance, and handling HR processes efficiently',
+                techStack: ['React']
               }
             ].map((project) => (
               <div key={project.title} className="project-card">
-                <h4>
-                  {project.link ? (
-                    <a 
-                      href={project.link} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      style={{ color: 'inherit', textDecoration: 'none' }}
-                    >
-                      {project.title}
-                    </a>
-                  ) : (
-                    project.title
-                  )}
-                </h4>
+                <h4>{project.title}</h4>
                 <p>{project.description}</p>
                 <div className="tech-stack">
                   {project.techStack.map((tech, index) => (
                     <span key={index}>{tech}</span>
                   ))}
                 </div>
-
-                
-
               </div>
             ))}
-          </div>
-          <br></br>
-
-          <div className="facilitator-feedback">
-            <h3>Facilitator's Feedback</h3>
-            <p>
-              <br></br>
-              S'bu consistently demonstrates exceptional potential as a developer and designer. 
-              His projects showcase not just technical skills, but a deep understanding of user 
-              experience and innovative problem-solving. The Recipe App and Hotel App particularly 
-              highlight his ability to create functional, user-friendly interfaces that solve real-world 
-              challenges. His commitment to learning, attention to detail, and creative approach 
-              set him apart as a promising talent in web and mobile development. Keep pushing 
-              boundaries, continue learning, and stay curious – your growth trajectory is incredibly 
-              impressive!
-            </p>
           </div>
         </div>
       </div>

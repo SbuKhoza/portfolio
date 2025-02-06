@@ -1,13 +1,13 @@
 import React from 'react';
-import '../components/Body.css';
-import profileImage from '../assets/Sibusiso.png'; // You'll need to replace this with your own image
-import resumePDF from '../assets/SibusisoKhozaResume.pdf'; // Replace with your own resume
+import './Body.css';
+import profileImage from '../assets/Sibusiso.png';
+import SibusisoKhozaResume from '../assets/SibusisoKhozaResume.pdf';
 
-function About() {
+function Bodysection() {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = resumePDF;
-    link.download = 'Resume.pdf';
+    link.href = SibusisoKhozaResume;
+    link.download = 'SibusisoKhozaResume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -20,8 +20,8 @@ function About() {
           <div className="text-content">
             <div className="text-content-wrapper">
               <span id="greeting">Hello,</span>
-              <h1 id="myname">I'm [Your Name]</h1>
-              <h2 id="j-title">Software Developer & Digital Innovator</h2>
+              <h1 id="myname">I'm S'bu</h1>
+              <h2 id="j-title">Fullstack Web & Mobile Developer</h2>
             </div>
           </div>
 
@@ -39,31 +39,34 @@ function About() {
         </button>
 
         <p className="bio-text">
-          I'm a passionate software developer with a keen eye for creating intuitive 
-          and innovative digital solutions. With a strong background in web and mobile 
-          development, I bring creativity and technical expertise to every project. 
-          My approach combines user-centric design principles with robust technical 
-          implementation, ensuring both functionality and exceptional user experience.
+          I always see myself as a Digital Architect. I have a
+          Google UX Design Professional Certificate and
+          Meta Introduction to Frontend Development
+          Certificate. Proficient in HTML, CSS, React.js, React-
+          native I specialize in creating dynamic user
+          interfaces. Skilled in Figma, I excel in user research,
+          UX design, wireframing, and prototyping. My
+          commitment to user-centric design is reflected in
+          my ability to merge creativity with technical
+          prowess, crafting seamless digital experiences.
         </p>
 
         <div className="education-section">
           <h3>Education</h3>
           <div className="education-grid">
             <div className="education-item">
-              <h4>Software Development Certification</h4>
-              <p>Full Stack Web Development</p>
+              <h4>Google UX Design Professional Certificate</h4>
+              <p>COURSERA</p>
             </div>
             <div className="education-item">
-              <h4>Web Technologies</h4>
-              <p>Advanced Web Development</p>
+              <h4>MERN Stack Development</h4>
+              <p>Full Stack Developer</p>
+            </div>
+            <div className="education-item">
+              <h4>Website Development</h4>
             </div>
             <div className="education-item">
               <h4>Mobile App Development</h4>
-              <p>Cross-Platform Applications</p>
-            </div>
-            <div className="education-item">
-              <h4>UX Design Principles</h4>
-              <p>User Experience Design</p>
             </div>
           </div>
         </div>
@@ -74,16 +77,16 @@ function About() {
           <h3>Skills Matrix</h3>
           <div className="skills-grid">
             {[
-              { skill: 'HTML', level: 'Advanced' },
+              { skill: 'HTML', level: 'Intermediate' },
               { skill: 'CSS', level: 'Advanced' },
-              { skill: 'JavaScript', level: 'Advanced' },
-              { skill: 'React', level: 'Advanced' },
+              { skill: 'JavaScript', level: 'Intermediate' },
               { skill: 'React Native', level: 'Intermediate' },
-              { skill: 'TypeScript', level: 'Intermediate' },
-              { skill: 'Node.js', level: 'Intermediate' },
+              { skill: 'TypeScript', level: 'Beginner' },
+              { skill: 'UX/UI Designer', level: 'Advanced' },
+              { skill: 'Wordpress', level: 'Advanced' },
+              { skill: 'Figma', level: 'Advanced' },
               { skill: 'MongoDB', level: 'Intermediate' },
-              { skill: 'Firebase', level: 'Intermediate' },
-              { skill: 'UX/UI Design', level: 'Advanced' }
+              { skill: 'Firebase', level: 'Intermediate' }
             ].map((item, index) => (
               <div key={index} className="skill-item">
                 <span className="skill-name">{item.skill}</span>
@@ -94,23 +97,23 @@ function About() {
         </div>
 
         <div className="projects-section">
-          <h3>Notable Projects</h3>
+          <h3>Projects</h3>
           <div className="projects-grid">
             {[
               {
-                title: 'Task Management App',
-                description: 'Full-featured task tracking application with user authentication and real-time updates',
-                techStack: ['React Native', 'Firebase', 'TypeScript']
+                title: 'Todo List',
+                description: 'Prototype of a todo list mobile application',
+                techStack: ['Figma']
               },
               {
-                title: 'Recipe Discovery Platform',
-                description: 'Web application aggregating recipes from multiple sources with advanced search functionality',
-                techStack: ['React', 'Node.js', 'RESTful APIs']
+                title: 'Recipe App',
+                description: 'React recipe app uses APIs to fetch recipes',
+                techStack: ['React', 'Restful APIs']
               },
               {
-                title: 'E-commerce Dashboard',
-                description: 'Comprehensive admin panel for managing product inventory, sales, and user analytics',
-                techStack: ['React', 'MongoDB', 'Express']
+                title: 'Employee Management System',
+                description: 'A comprehensive web application for managing employee data, tracking attendance, and handling HR processes efficiently',
+                techStack: ['React']
               }
             ].map((project) => (
               <div key={project.title} className="project-card">
@@ -130,4 +133,4 @@ function About() {
   );
 }
 
-export default About;
+export default Bodysection;
