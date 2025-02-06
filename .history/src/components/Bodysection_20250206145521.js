@@ -123,7 +123,7 @@ function Bodysection() {
                 title: 'Todo List',
                 description: 'Prototype of a todo list mobile application',
                 techStack: ['Figma'],
-                link: 'https://todolist-lemon-sigma.vercel.app/',
+                
               },
               {
                 title: 'Recipe App',
